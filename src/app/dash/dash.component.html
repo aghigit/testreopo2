@@ -1,0 +1,20 @@
+<h1>hoi</h1>
+<input type="text" [(ngModel)]="twoways">
+<h1>{{twoways}}</h1>
+
+<div *ngIf="box" style="height: 20px; width: 20px; background-color: blue;">
+</div>
+<button (click)="displayBox()">display</button>
+
+<div *ngFor="let student of students">
+    <div *ngIf="student.age>27">
+        <p>{{student.name}}</p>
+        <p>{{student.age}}</p>    
+    </div>
+</div>
+
+<button (click)="getStudents()">get students</button>
+
+<button (click)="nextp()">next</button>
+
+<h1>{{inpp}}</h1>
